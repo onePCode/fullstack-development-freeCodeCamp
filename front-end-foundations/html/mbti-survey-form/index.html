@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">MBTI Personality Survey Form</h1>
+    <p id="description">Thank you for taking the time to participate in our MBTI personality research.</p>
+    <form action="/process" method="POST" id="survey-form">
+      <fieldset>
+        <legend>Your Personal Information</legend>
+
+        <label id="name-label" for="name">Name</label>
+        <input
+        name="name"
+        id="name"
+        type="text"
+        placeholder="Your Name"
+        required
+        >
+        <br/>
+        <label id="email-label" for="email">Your Email</label>
+        <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Your Email"
+        required
+        >
+        <br/>
+        <label id="number-label" for="number">Your Age</label>
+        <input
+        name="age"
+        id="number"
+        type="number"
+        placeholder="Age"
+        min="10"
+        max="100"
+        required
+        >
+        <br/>
+        <label id="occupation-label" for="occupation">Which option best describes your current occupation?</label>
+        <select id="occupation" name="occupation">
+          <option value="">-- Select your occupation --</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full-time job</option>
+          <option value="part-time-job">Part-time job</option>
+          <option value="self-employed">Self-employed</option>
+          <option value="unemployed">Unemployed</option>
+          <option value="retired">Retired</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Have you taken an MBTI test before?</legend>
+
+        <label id="yes-label" for="yes">Yes</label>
+        <input
+        type="radio"
+        id="yes"
+        name="taking-test"
+        value="yes"
+        >
+
+        <label id="no-label" for="no">No</label>
+        <input
+        type="radio"
+        id="no"
+        name="taking-test"
+        value="no"
+        >
+
+        <label id="not-sure-label" for="not-sure">Not Sure</label>
+        <input
+        type="radio"
+        id="not-sure"
+        name="taking-test"
+        value="not-sure"
+        >
+      </fieldset>
+      <fieldset>
+        <legend>What is your MBTI personality type? (If known)</legend>
+        <label id="mbti-type-label" for="mbti-type">Your MBTI Type</label>
+        <select id="mbti-type" name="mbti-type">
+          <option value="">--Select your MBTI type--</option>
+          <option value="ESTP">ESTP</option>
+          <option value="ESFP">ESFP</option>
+          <option value="ESTJ">ESTJ</option>
+          <option value="ESFJ">ESFJ</option>
+          <option value="ISTP">ISTP</option>
+          <option value="ISFP">ISFP</option>
+          <option value="ISTJ">ISTJ</option>
+          <option value="ISFJ">ISFJ</option>
+          <option value="ENTP">ENTP</option>
+          <option value="ENFP">ENFP</option>
+          <option value="ENTJ">ENTJ</option>
+          <option value="ENFJ">ENFJ</option>
+          <option value="INTP">INTP</option>
+          <option value="INFP">INFP</option>
+          <option value="INTJ">INTJ</option>
+          <option value="INFJ">INFJ</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Which aspects of MBTI interest you the most? (Check all that apply)</legend>
+
+        <label id="personality-traits-analysis-label" for="personality-traits-analysis">Personality traits analysis</label>
+        <input
+        id="personality-traits-analysis"
+        type="checkbox"
+        name="personality-traits-analysis"
+        value="personality-traits-analysis">
+
+        <label id="career-recommendation-label" for="career-recommendation">Career recommendations</label>
+        <input
+        id="career-recommendation"
+        type="checkbox"
+        name="career-recommendation"
+        value="career-recommendation">
+        <br/>
+
+        <label id="relationship-compatibility-label" for="relationship-compatibility">Relationship compatibility</label>
+        <input
+        id="relationship-compatibility"
+        type="checkbox"
+        name="relationship-compatibility"
+        value="relationship-compatibility">
+
+        <label id="personal-growth-tips-label" for="personal-growth-tips">Personal growth tips</label>
+        <input
+        id="personal-growth-tips"
+        type="checkbox"
+        name="personal-growth-tips"
+        value="personal-growth-tips">
+        <br/>
+
+        <label id="famous-personalities-with-your-type-label" for="famous-personalities-with-your-type">Famous personalities with your type</label>
+        <input
+        id="famous-personalities-with-your-type"
+        type="checkbox"
+        name="famous-personalities-with-your-type"
+        value="famous-personalities-with-your-type">
+
+        <label id="other-psychological-theories-related-to-mbti-label" for="other-psychological-theories-related-to-mbti">Other psychological theories related to MBTI</label>
+        <input
+        id="other-psychological-theories-related-to-mbti"
+        type="checkbox"
+        name="other-psychological-theories-related-to-mbti"
+        value="other-psychological-theories-related-to-mbti">
+      </fieldset>
+      <fieldset>
+        <legend>How accurate do you think your MBTI result is?</legend>
+
+        <label id="very-accurate-label" for="very-accurate">Very accurate</label>
+        <input
+        id="very-accurate"
+        name="test-accuracy"
+        type="radio">
+
+        <label id="somewhat-accurate-label" for="somewhat-accurate">Somewhat accurate</label>
+        <input
+        id="somewhat-accurate"
+        name="test-accuracy"
+        type="radio">
+
+        <label id="not-accurate-label" for="not-accurate">Not accurate</label>
+        <input
+        id="not-accurate"
+        name="test-accuracy"
+        type="radio">
+      </fieldset>
+
+      <label id="comments-label" for="comments">Any comments or suggestions about MBTI research?</label>
+      <textarea id="comments" name="comments" cols="40" rows="10" placeholder="Enter your comment here..."></textarea>
+
+      <button id="submit-button" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
