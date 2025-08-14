@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Garlic Butter Pasta</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>Garlic Butter Pasta</h1>
+      <p>A quick and delicious pasta dish with fragrant garlic, rich butter, and a hint of fresh parsley. Perfect for busy weeknights or a simple comfort meal.</p>
+      <img 
+      src="https://res.cloudinary.com/hz3gmuqw6/image/upload/c_fill,w_941,f_auto,q_auto/v1689866114/recipes/DSC07125_64b94f81724a0.jpg" 
+      alt="garlic butter pasta" 
+      width="300" 
+      height="200">
+      
+      <section>
+        <h2>Ingredients</h2>
+        <ul>
+          <li>200 g spaghetti (or your preferred pasta)
+          </li>
+          <li>3 tbsp unsalted butter</li>
+          <li>3 cloves garlic, minced</li>
+          <li>1 tbsp olive oil</li>
+          <li>Salt, to taste</li>
+          <li>Black pepper, to taste</li>
+          <li>Fresh parsley, chopped (for garnish)</li>
+          <li>Grated Parmesan cheese (optional)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Instructions</h2>
+        <ol>
+          <li>Cook pasta according to package instructions until al dente. Reserve ½ cup of the pasta water, then drain.</li>
+          <li>In a large pan, heat olive oil and butter over medium heat.</li>
+          <li>Add minced garlic and sauté until fragrant (about 1–2 minutes).</li>
+          <li>Add the cooked pasta to the pan, along with a splash of pasta water. Toss well to coat.</li>
+          <li>Season with salt and black pepper.</li>
+          <li>Garnish with fresh parsley and Parmesan cheese if desired.</li>
+          <li>Serve immediately and enjoy!</li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
