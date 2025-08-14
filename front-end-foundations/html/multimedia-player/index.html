@@ -1,29 +1,33 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Movie Review</title>
- </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia Player</title>
+</head>
 
 <body>
-  <main>
-      <h1>Movie Review: Interstellar</h1>
-      <img src="https://i.ytimg.com/vi/dGMkhhi6clQ/maxresdefault.jpg" alt="Interstellar Poster" width="500" height="315">
-      <p>The Interstellar movie poster, starring Matthew McConaughey. A striking image of an astronaut standing on an icy alien world, gazing at a distant horizon under a sky filled with stars and a massive planet looming above.
-Interstellar is a mind-bending sci-fi epic directed by Christopher Nolan, following the journey of Cooper, a former NASA pilot tasked with finding a new habitable world for humanity as Earth faces environmental collapse. Alongside scientist Amelia Brand, Cooper travels through a wormhole to distant galaxies, confronting hostile worlds, the passage of time, and the enduring bond between a father and his daughter. With breathtaking visuals, an emotional score by Hans Zimmer, and a story that blends science with human connection, Interstellar challenges us to look beyond the stars and within ourselves.</p>
+  <h1>My Multimedia Player</h1>
+    <section>
+      <h2>Sailing Away - Relaxing Music</h2>
+      <audio controls aria-label="Relaxing instrumental song - Sailing Away">
+        <source src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3" type="audio/mpeg"></source>
+      </audio>
+    </section>
+    <section>
+      <h2>What is the Map Method?</h2>
+      <video controls width="300" aria-label="Video tutorial explaining the map method">
+        <source src="https://cdn.freecodecamp.org/curriculum/labs/What%20is%20the%20map%20method%20and%20how%20does%20it%20work.mp4" type="video/mp4"></source>
+        <track src="https://cdn.freecodecamp.org/curriculum/labs/map-method-subtitles.vtt" kind="subtitles" srclang="en" label="English"></track>
+      </video>
+    </section>
+    <section>
+      <h2>Transcript</h2>
       <p>
-          <strong>Movie Rating:</strong><span aria-hidden="true">⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐</span>(10/10)
+        In this video, we explore how the JavaScript <code>map()</code> method works, 
+      its syntax, and how it can be used to transform arrays in a clean and functional way.
+    </p>
       </p>
-
-      <h2>Cast Members</h2>
-      <ul>
-          <li><strong>Matthew McConaughey</strong> as Joseph Cooper</li>
-          <li><strong>Anne Hathaway</strong> as Dr. Amelia Brand</li>
-          <li><strong>Jessica Chastain</strong> as Murphy "Murph" Cooper</li>
-          <li><strong>Michael Caine</strong> as Professor John Brand</li>
-      </ul>
-  </main>
-</body>
-
+    </section>
+  </body>
 </html>
