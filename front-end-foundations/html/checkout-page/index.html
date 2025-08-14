@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+  <h1>Checkout</h1>
+  <section>
+      <h2>Your Cart</h2>
+      <figure>
+          <img 
+          src="https://images.squarespace-cdn.com/content/v1/59bcd130f9a61ebc1fe7bf6e/1588906586327-QP9JXUR5GPTJ4YA5WRHY/Kakomu%2Bws.jpg?format=1000w"
+          height="315" 
+          alt="Margaret Morales digital artwork of a dreamy woman with flowing hair in watercolor-style blues and pinks, celestial fantasy art print.">
+          <figcaption>
+              <p>"Celestial Bloom" – Limited Edition Art Print</p>
+              <p>– $120.00</p>
+          </figcaption>
+      </figure>
+  </section>
+  <section>
+      <h2>Payment Information</h2>
+      <form action="/process" method="POST">
+        <label for="card-name">Cardholder Name</label>
+        <input 
+        type="text" 
+        id="card-name" 
+        name="card-name" 
+        placeholder="Enter full name on card"
+        required
+        aria-required="true">
+        <br/>
+        <label for="card-number">Card Number</label>
+        <input
+        type="text"
+        id="card-number"
+        name="card-number"
+        minlength="13"
+        maxlength="19"
+        inputmode="numeric"
+        pattern="\d{13,19}"
+        placeholder="Enter card number"
+        required
+        aria-required="true">
+        <br/>
+        <label for="expiry">Valid Thru [MM/YY]</label>
+        <input
+        type="text"
+        id="expiry"
+        name="expiry"
+        placeholder="Enter expiration date">
+        <br/>
+        <label for="cvc">Security Code</label>
+        <input
+        type="text"
+        id="cvc"
+        name="cvc"
+        minlength="3"
+        maxlength="4"
+        placeholder="Enter security code">
+        <br/>
+
+        <button type="submit">Place Order</button>
+      </form>
+  </section>
+</body>
+
+</html>
