@@ -1,100 +1,98 @@
 body {
-  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
-  font-family: sans-serif;
+  background-image: url(https://i.pinimg.com/736x/29/33/4b/29334bcb19a12339c8ada09658f1c6e1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: monospace, impact, arial, sans-serif;
   padding: 20px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-right: auto; 
+  margin-left:auto;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.item {
+  background: linear-gradient(to bottom left,rgba(200, 200, 200, 0.6),rgba(150,150,150,0.6));
+  padding: 15px;
+  margin-right: auto; 
+  margin-left:auto;
+  max-width: 300px;
+  border-radius: 10px;
+  text-align: left;
 }
 
 h1 {
-  font-size: 40px;
+  text-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
 }
 
 h2 {
-  font-size: 30px;
-}
-
-.established {
-  font-style: italic;
-}
-
-h1, h2, p {
-  text-align: center;
-}
-
-.menu {
-  width: 80%;
-  background-color: burlywood;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  max-width: 500px;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -25px;
-}
-
-hr {
-  height: 2px;
-  background-color: brown;
-  border-color: brown;
-}
-
-.bottom-line {
-  margin-top: 25px;
+  text-size: 30px;
 }
 
 h1, h2 {
-  font-family: Impact, serif;
+  text-align: center;
 }
 
-.item p {
-  display: inline-block;
+.todo-list {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.todo-list li {
+  margin-bottom: 15px;
+  text-size: 18px;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+.sub-item {
+  margin-left: 25px;
   margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 18px;
 }
 
-.flavor, .dessert {
-  text-align: left;
-  width: 75%;
+.sub-item li {
+  list-style-type: square;
 }
 
-.price {
-  text-align: right;
-  width: 25%;
+.sub-item-link {
+  text-decoration: none;
+  font-size: 16px;
+  color: #9b59b6;
 }
 
-/* FOOTER */
-
-footer {
-  font-size: 14px;
+.sub-item-link:visited {
+  color: #e67e22;
 }
 
-address {
-  font-style: normal;
+.sub-item-link:hover {
+  color: #3498db;
 }
 
-.address {
-  margin-bottom: 5px;
+.sub-item-link:focus {
+  outline: 2px solid #1abc9c; 
+  outline-offset: 2px;
 }
 
-a {
-  color: black;
-}
-
-a:visited {
-  color: black;
-}
-
-a:hover {
-  color: brown;
-}
-
-a:active {
-  color: brown;
+.sub-item-link:active {
+  color: #e74c3c;
 }
