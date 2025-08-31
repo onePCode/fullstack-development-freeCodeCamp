@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.container {
+  background: #fff;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3)
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+input, select, textarea, button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+input:first-of-type {
+  border-radius: 12px;
+  background-color: #f9f9ff;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: dodgerblue;
+  outline: none;
+}
+
+input:valid:not(:placeholder-shown), select:valid, textarea:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
+input:invalid:not(:placeholder-shown), select:invalid, textarea:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
+select:required:invalid {
+  color: gray;
+  border: 1px solid #ccc;
+}
+
+select:valid {
+  border-color: green;
+  color: black;
+}
+
+select:focus:required:invalid {
+  border-color: red;
+}
+
+button:hover {
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.radio-group input[type="radio"] {
+  display: none;
+}
+
+.radio-group label {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 5px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  border-color: dodgerblue;
+  background-color: lightblue;
+  color: dodgerblue;
+  box-shadow: 0 0 5px dodgerblue;
+  font-weight: bold;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+textarea {
+  font-family: Arial, sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: Arial, sans-serif;
+}
