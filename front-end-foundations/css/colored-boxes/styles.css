@@ -1,0 +1,40 @@
+body {
+  background-color: #f4f4f4
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0 15px;
+  border-radius: 15px;
+}
+
+.color-box {
+  width: 100px;
+  height: 100px;
+} 
+
+.color1 {
+  background-color: #55680D;
+}
+
+.color2 {
+  background-color: rgb(35, 29, 100);
+}
+
+.color3 {
+  background-color: darkslategray;
+}
+
+.color4 {
+  background-color: hsl(15, 75%, 45%)
+}
+
+.color5 {
+  background-color: goldenrod;
+}
